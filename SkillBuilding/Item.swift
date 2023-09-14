@@ -16,10 +16,8 @@ final class Item {
         self.timestamp = timestamp
     }
 }
-<<<<<<< HEAD
-=======
 
 enum ImageDimension {
     case square, banner
 }
->>>>>>> 56eb44c (Initial Commit)
+
