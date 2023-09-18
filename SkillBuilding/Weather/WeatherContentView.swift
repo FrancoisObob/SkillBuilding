@@ -16,7 +16,9 @@ struct WeatherContentView: View {
             BackgroundView(isNight: isNight)
             VStack {
                 CityTextView(cityName: "Brooklyn, NY")
+                
                 MainWeatherStatusView(imageName: isNight ? "moon.stars.fill" : "cloud.sun.fill", temperature: 25)
+                
                 HStack(spacing: 20) {
                     WeatherDayView(dayOfWeek: "MON", imageName: "cloud.sun.fill", temperature: 21)
                     WeatherDayView(dayOfWeek: "TUE", imageName: "sun.max.fill", temperature: 28)
@@ -24,15 +26,21 @@ struct WeatherContentView: View {
                     WeatherDayView(dayOfWeek: "THU", imageName: "sun.max.fill", temperature: 25)
                     WeatherDayView(dayOfWeek: "FRI", imageName: "cloud.heavyrain.fill", temperature: 19)
                 }
+                
                 Spacer()
+                
                 Button {
                     isNight.toggle()
                 } label: {
                     WeatherButton(title: "Change Day Time", foregroundColor: .blue, backgroundColor: .white)
                 }
-
+                
                 Spacer()
             }
+        }
+        .onAppear {
+            let button = WeatherButton(title: "Change Day Time", foregroundColor: .blue, backgroundColor: .white)
+            print(type(of: button.body))
         }
     }
 }

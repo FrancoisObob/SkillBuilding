@@ -15,7 +15,15 @@
 		0F1560792AB3413900404083 /* SkillBuildingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1560782AB3413900404083 /* SkillBuildingTests.swift */; };
 		0F1560832AB3413900404083 /* SkillBuildingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1560822AB3413900404083 /* SkillBuildingUITests.swift */; };
 		0F1560852AB3413900404083 /* SkillBuildingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1560842AB3413900404083 /* SkillBuildingUITestsLaunchTests.swift */; };
+		0F4B160B2AB8D97600E137F7 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B160A2AB8D97600E137F7 /* SafariView.swift */; };
+		0F4B160F2AB8FD2C00E137F7 /* FrameworkTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B160E2AB8FD2C00E137F7 /* FrameworkTitleView.swift */; };
+		0F4B16112AB8FD5F00E137F7 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B16102AB8FD5F00E137F7 /* XDismissButton.swift */; };
 		0F81ACBA2AB3A74400C9C06F /* WeatherContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F81ACB92AB3A74400C9C06F /* WeatherContentView.swift */; };
+		0FFC5EEB2AB5DC2A00423E51 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC5EEA2AB5DC2A00423E51 /* Framework.swift */; };
+		0FFC5EED2AB5DD1C00423E51 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC5EEC2AB5DD1C00423E51 /* FrameworkGridView.swift */; };
+		0FFC5EEF2AB6014D00423E51 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC5EEE2AB6014D00423E51 /* FrameworkDetailView.swift */; };
+		0FFC5EF12AB6031900423E51 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC5EF02AB6031900423E51 /* AFButton.swift */; };
+		0FFC5EF32AB6067C00423E51 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC5EF22AB6067C00423E51 /* FrameworkGridViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +57,15 @@
 		0F15607E2AB3413900404083 /* SkillBuildingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkillBuildingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F1560822AB3413900404083 /* SkillBuildingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillBuildingUITests.swift; sourceTree = "<group>"; };
 		0F1560842AB3413900404083 /* SkillBuildingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillBuildingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0F4B160A2AB8D97600E137F7 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		0F4B160E2AB8FD2C00E137F7 /* FrameworkTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTitleView.swift; sourceTree = "<group>"; };
+		0F4B16102AB8FD5F00E137F7 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		0F81ACB92AB3A74400C9C06F /* WeatherContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherContentView.swift; sourceTree = "<group>"; };
+		0FFC5EEA2AB5DC2A00423E51 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
+		0FFC5EEC2AB5DD1C00423E51 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
+		0FFC5EEE2AB6014D00423E51 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
+		0FFC5EF02AB6031900423E51 /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
+		0FFC5EF22AB6067C00423E51 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +117,9 @@
 			isa = PBXGroup;
 			children = (
 				0F1560632AB3413700404083 /* SkillBuildingApp.swift */,
-				0F81ACB92AB3A74400C9C06F /* WeatherContentView.swift */,
-				0F1560652AB3413700404083 /* TimestampsContentView.swift */,
-				0F1560672AB3413700404083 /* Item.swift */,
+				0FFC5EE92AB5DC1900423E51 /* Frameworks */,
+				0FFC5EE82AB5DC0A00423E51 /* Weather */,
+				0FFC5EE72AB5DBF700423E51 /* Timestamps */,
 				0F1560692AB3413900404083 /* Assets.xcassets */,
 				0F15606B2AB3413900404083 /* SkillBuilding.entitlements */,
 				0F15606F2AB3413900404083 /* Info.plist */,
@@ -135,6 +151,86 @@
 				0F1560842AB3413900404083 /* SkillBuildingUITestsLaunchTests.swift */,
 			);
 			path = SkillBuildingUITests;
+			sourceTree = "<group>";
+		};
+		0F4B16122AB8FEF400E137F7 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				0F4B16132AB8FF0100E137F7 /* FrameworkGrid */,
+				0F4B16142AB8FF0B00E137F7 /* FrameworkDetail */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		0F4B16132AB8FF0100E137F7 /* FrameworkGrid */ = {
+			isa = PBXGroup;
+			children = (
+				0FFC5EEC2AB5DD1C00423E51 /* FrameworkGridView.swift */,
+				0FFC5EF22AB6067C00423E51 /* FrameworkGridViewModel.swift */,
+			);
+			path = FrameworkGrid;
+			sourceTree = "<group>";
+		};
+		0F4B16142AB8FF0B00E137F7 /* FrameworkDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0FFC5EEE2AB6014D00423E51 /* FrameworkDetailView.swift */,
+			);
+			path = FrameworkDetail;
+			sourceTree = "<group>";
+		};
+		0F4B16152AB8FF1600E137F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0FFC5EEA2AB5DC2A00423E51 /* Framework.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0F4B16162AB8FF2200E137F7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0F4B160E2AB8FD2C00E137F7 /* FrameworkTitleView.swift */,
+				0F4B16102AB8FD5F00E137F7 /* XDismissButton.swift */,
+				0FFC5EF02AB6031900423E51 /* AFButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0F4B16172AB8FF3200E137F7 /* UIKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				0F4B160A2AB8D97600E137F7 /* SafariView.swift */,
+			);
+			path = "UIKit Components";
+			sourceTree = "<group>";
+		};
+		0FFC5EE72AB5DBF700423E51 /* Timestamps */ = {
+			isa = PBXGroup;
+			children = (
+				0F1560652AB3413700404083 /* TimestampsContentView.swift */,
+				0F1560672AB3413700404083 /* Item.swift */,
+			);
+			path = Timestamps;
+			sourceTree = "<group>";
+		};
+		0FFC5EE82AB5DC0A00423E51 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				0F81ACB92AB3A74400C9C06F /* WeatherContentView.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		0FFC5EE92AB5DC1900423E51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F4B16152AB8FF1600E137F7 /* Models */,
+				0F4B16122AB8FEF400E137F7 /* Screens */,
+				0F4B16162AB8FF2200E137F7 /* Views */,
+				0F4B16172AB8FF3200E137F7 /* UIKit Components */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +366,15 @@
 				0F1560662AB3413700404083 /* TimestampsContentView.swift in Sources */,
 				0F1560682AB3413700404083 /* Item.swift in Sources */,
 				0F81ACBA2AB3A74400C9C06F /* WeatherContentView.swift in Sources */,
+				0F4B160F2AB8FD2C00E137F7 /* FrameworkTitleView.swift in Sources */,
+				0FFC5EED2AB5DD1C00423E51 /* FrameworkGridView.swift in Sources */,
+				0F4B160B2AB8D97600E137F7 /* SafariView.swift in Sources */,
+				0FFC5EF12AB6031900423E51 /* AFButton.swift in Sources */,
+				0FFC5EF32AB6067C00423E51 /* FrameworkGridViewModel.swift in Sources */,
+				0FFC5EEF2AB6014D00423E51 /* FrameworkDetailView.swift in Sources */,
+				0FFC5EEB2AB5DC2A00423E51 /* Framework.swift in Sources */,
 				0F1560642AB3413700404083 /* SkillBuildingApp.swift in Sources */,
+				0F4B16112AB8FD5F00E137F7 /* XDismissButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
