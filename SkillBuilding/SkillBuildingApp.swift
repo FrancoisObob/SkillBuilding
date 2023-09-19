@@ -25,7 +25,7 @@ struct SkillBuildingApp: App {
 
     var body: some Scene {
         WindowGroup {
-            FrameworkGridView()
+            AppetizersTabView()
         }
         .modelContainer(sharedModelContainer)
     }

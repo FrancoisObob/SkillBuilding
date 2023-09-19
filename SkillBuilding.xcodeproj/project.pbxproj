@@ -19,6 +19,15 @@
 		0F4B160F2AB8FD2C00E137F7 /* FrameworkTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B160E2AB8FD2C00E137F7 /* FrameworkTitleView.swift */; };
 		0F4B16112AB8FD5F00E137F7 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B16102AB8FD5F00E137F7 /* XDismissButton.swift */; };
 		0F81ACBA2AB3A74400C9C06F /* WeatherContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F81ACB92AB3A74400C9C06F /* WeatherContentView.swift */; };
+		0FCD73692AB9C8E3006E539A /* BarcodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCD73682AB9C8E3006E539A /* BarcodeScannerView.swift */; };
+		0FCD736B2ABA13F2006E539A /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCD736A2ABA13F2006E539A /* ScannerVC.swift */; };
+		0FCD736D2ABA1707006E539A /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCD736C2ABA1707006E539A /* ScannerView.swift */; };
+		0FCD73702ABA21AE006E539A /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCD736F2ABA21AE006E539A /* AlertItem.swift */; };
+		0FCD73722ABA2BC4006E539A /* BarcodeScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCD73712ABA2BC4006E539A /* BarcodeScannerViewModel.swift */; };
+		0FCD73752ABA30E2006E539A /* AppetizersTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCD73742ABA30E2006E539A /* AppetizersTabView.swift */; };
+		0FCD73772ABA30FE006E539A /* AppetizersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCD73762ABA30FE006E539A /* AppetizersListView.swift */; };
+		0FCD73792ABA3104006E539A /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCD73782ABA3104006E539A /* AccountView.swift */; };
+		0FCD737B2ABA3115006E539A /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCD737A2ABA3115006E539A /* OrderView.swift */; };
 		0FFC5EEB2AB5DC2A00423E51 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC5EEA2AB5DC2A00423E51 /* Framework.swift */; };
 		0FFC5EED2AB5DD1C00423E51 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC5EEC2AB5DD1C00423E51 /* FrameworkGridView.swift */; };
 		0FFC5EEF2AB6014D00423E51 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC5EEE2AB6014D00423E51 /* FrameworkDetailView.swift */; };
@@ -61,6 +70,15 @@
 		0F4B160E2AB8FD2C00E137F7 /* FrameworkTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTitleView.swift; sourceTree = "<group>"; };
 		0F4B16102AB8FD5F00E137F7 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		0F81ACB92AB3A74400C9C06F /* WeatherContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherContentView.swift; sourceTree = "<group>"; };
+		0FCD73682AB9C8E3006E539A /* BarcodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerView.swift; sourceTree = "<group>"; };
+		0FCD736A2ABA13F2006E539A /* ScannerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
+		0FCD736C2ABA1707006E539A /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		0FCD736F2ABA21AE006E539A /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		0FCD73712ABA2BC4006E539A /* BarcodeScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewModel.swift; sourceTree = "<group>"; };
+		0FCD73742ABA30E2006E539A /* AppetizersTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersTabView.swift; sourceTree = "<group>"; };
+		0FCD73762ABA30FE006E539A /* AppetizersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersListView.swift; sourceTree = "<group>"; };
+		0FCD73782ABA3104006E539A /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		0FCD737A2ABA3115006E539A /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		0FFC5EEA2AB5DC2A00423E51 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 		0FFC5EEC2AB5DD1C00423E51 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
 		0FFC5EEE2AB6014D00423E51 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
@@ -117,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				0F1560632AB3413700404083 /* SkillBuildingApp.swift */,
+				0FCD73732ABA30A7006E539A /* Appetizers */,
+				0FCD73672AB9C89E006E539A /* BarcodeScanner */,
 				0FFC5EE92AB5DC1900423E51 /* Frameworks */,
 				0FFC5EE82AB5DC0A00423E51 /* Weather */,
 				0FFC5EE72AB5DBF700423E51 /* Timestamps */,
@@ -203,6 +223,29 @@
 				0F4B160A2AB8D97600E137F7 /* SafariView.swift */,
 			);
 			path = "UIKit Components";
+			sourceTree = "<group>";
+		};
+		0FCD73672AB9C89E006E539A /* BarcodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				0FCD73682AB9C8E3006E539A /* BarcodeScannerView.swift */,
+				0FCD73712ABA2BC4006E539A /* BarcodeScannerViewModel.swift */,
+				0FCD736A2ABA13F2006E539A /* ScannerVC.swift */,
+				0FCD736C2ABA1707006E539A /* ScannerView.swift */,
+				0FCD736F2ABA21AE006E539A /* AlertItem.swift */,
+			);
+			path = BarcodeScanner;
+			sourceTree = "<group>";
+		};
+		0FCD73732ABA30A7006E539A /* Appetizers */ = {
+			isa = PBXGroup;
+			children = (
+				0FCD73742ABA30E2006E539A /* AppetizersTabView.swift */,
+				0FCD73762ABA30FE006E539A /* AppetizersListView.swift */,
+				0FCD73782ABA3104006E539A /* AccountView.swift */,
+				0FCD737A2ABA3115006E539A /* OrderView.swift */,
+			);
+			path = Appetizers;
 			sourceTree = "<group>";
 		};
 		0FFC5EE72AB5DBF700423E51 /* Timestamps */ = {
@@ -364,17 +407,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F1560662AB3413700404083 /* TimestampsContentView.swift in Sources */,
+				0FCD73792ABA3104006E539A /* AccountView.swift in Sources */,
+				0FCD73752ABA30E2006E539A /* AppetizersTabView.swift in Sources */,
+				0FCD73702ABA21AE006E539A /* AlertItem.swift in Sources */,
 				0F1560682AB3413700404083 /* Item.swift in Sources */,
 				0F81ACBA2AB3A74400C9C06F /* WeatherContentView.swift in Sources */,
 				0F4B160F2AB8FD2C00E137F7 /* FrameworkTitleView.swift in Sources */,
 				0FFC5EED2AB5DD1C00423E51 /* FrameworkGridView.swift in Sources */,
+				0FCD736B2ABA13F2006E539A /* ScannerVC.swift in Sources */,
 				0F4B160B2AB8D97600E137F7 /* SafariView.swift in Sources */,
 				0FFC5EF12AB6031900423E51 /* AFButton.swift in Sources */,
 				0FFC5EF32AB6067C00423E51 /* FrameworkGridViewModel.swift in Sources */,
+				0FCD736D2ABA1707006E539A /* ScannerView.swift in Sources */,
+				0FCD73692AB9C8E3006E539A /* BarcodeScannerView.swift in Sources */,
+				0FCD73772ABA30FE006E539A /* AppetizersListView.swift in Sources */,
 				0FFC5EEF2AB6014D00423E51 /* FrameworkDetailView.swift in Sources */,
 				0FFC5EEB2AB5DC2A00423E51 /* Framework.swift in Sources */,
 				0F1560642AB3413700404083 /* SkillBuildingApp.swift in Sources */,
+				0FCD737B2ABA3115006E539A /* OrderView.swift in Sources */,
 				0F4B16112AB8FD5F00E137F7 /* XDismissButton.swift in Sources */,
+				0FCD73722ABA2BC4006E539A /* BarcodeScannerViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
