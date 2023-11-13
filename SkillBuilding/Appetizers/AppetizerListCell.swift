@@ -8,11 +8,28 @@
 import SwiftUI
 
 struct AppetizerListCell: View {
+    let appetizer: Appetizer
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Image("asian-flank-steak")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 120, height: 90)
+                .cornerRadius(8)
+            VStack(alignment: .leading, spacing: 5) {
+                Text(appetizer.name)
+                    .font(.title2)
+                    .fontWeight(.medium)
+                Text("$\(appetizer.price, specifier: "%.f")")
+                    .font(.body)
+                    .fontWeight(.semibold)
+            }
+            .padding(.leading)
+        }
     }
 }
 
 #Preview {
-    AppetizerListCell()
+    AppetizerListCell(appetizer: MockData.sampleAppetizer)
 }
