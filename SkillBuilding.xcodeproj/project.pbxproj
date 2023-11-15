@@ -38,6 +38,9 @@
 		0FCD73772ABA30FE006E539A /* AppetizersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCD73762ABA30FE006E539A /* AppetizersListView.swift */; };
 		0FCD73792ABA3104006E539A /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCD73782ABA3104006E539A /* AccountView.swift */; };
 		0FCD737B2ABA3115006E539A /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCD737A2ABA3115006E539A /* OrderView.swift */; };
+		0FF4D2AB2B04FF6E009F5125 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF4D2AA2B04FF6E009F5125 /* AccountViewModel.swift */; };
+		0FF4D2AD2B0500AD009F5125 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF4D2AC2B0500AD009F5125 /* String+Ext.swift */; };
+		0FF4D2AF2B0508AA009F5125 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF4D2AE2B0508AA009F5125 /* User.swift */; };
 		0FFC5EEB2AB5DC2A00423E51 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC5EEA2AB5DC2A00423E51 /* Framework.swift */; };
 		0FFC5EED2AB5DD1C00423E51 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC5EEC2AB5DD1C00423E51 /* FrameworkGridView.swift */; };
 		0FFC5EEF2AB6014D00423E51 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC5EEE2AB6014D00423E51 /* FrameworkDetailView.swift */; };
@@ -99,6 +102,9 @@
 		0FCD73762ABA30FE006E539A /* AppetizersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersListView.swift; sourceTree = "<group>"; };
 		0FCD73782ABA3104006E539A /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		0FCD737A2ABA3115006E539A /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		0FF4D2AA2B04FF6E009F5125 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		0FF4D2AC2B0500AD009F5125 /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		0FF4D2AE2B0508AA009F5125 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0FFC5EEA2AB5DC2A00423E51 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 		0FFC5EEC2AB5DD1C00423E51 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
 		0FFC5EEE2AB6014D00423E51 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
@@ -245,19 +251,6 @@
 			path = "UIKit Components";
 			sourceTree = "<group>";
 		};
-		0F588B2A2B02677C005CD319 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				0FCD736F2ABA21AE006E539A /* AlertItem.swift */,
-				0F588B2B2B0271EF005CD319 /* LoadingView.swift */,
-				0F588B2F2B027D67005CD319 /* RemoteImage.swift */,
-				0F588B3A2B02B6E6005CD319 /* APDismissButton.swift */,
-				0F588B382B02B65A005CD319 /* APButton.swift */,
-				0F588B3C2B02B7BA005CD319 /* APCaracteristic.swift */,
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
 		0F588B312B02977D005CD319 /* List */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				0FCD73782ABA3104006E539A /* AccountView.swift */,
+				0FF4D2AA2B04FF6E009F5125 /* AccountViewModel.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -289,17 +283,9 @@
 			isa = PBXGroup;
 			children = (
 				0F7D04252ADDC8D10076E24E /* Appetizer.swift */,
+				0FF4D2AE2B0508AA009F5125 /* User.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		0F588B352B0297BF005CD319 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				0F7D04292ADEB3590076E24E /* NetworkManager.swift */,
-				0F588B342B0297AA005CD319 /* Models */,
-			);
-			path = Networking;
 			sourceTree = "<group>";
 		};
 		0FCD73672AB9C89E006E539A /* BarcodeScanner */ = {
@@ -316,14 +302,69 @@
 		0FCD73732ABA30A7006E539A /* Appetizers */ = {
 			isa = PBXGroup;
 			children = (
+				0F588B342B0297AA005CD319 /* Models */,
+				0FF4D2B02B0508C1009F5125 /* Utilities */,
+				0FF4D2B42B050903009F5125 /* Views */,
+				0FF4D2B52B050944009F5125 /* Screens */,
+			);
+			path = Appetizers;
+			sourceTree = "<group>";
+		};
+		0FF4D2B02B0508C1009F5125 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0FF4D2B12B0508CC009F5125 /* Alerts */,
+				0FF4D2B32B0508E7009F5125 /* Extensions */,
+				0FF4D2B22B0508D9009F5125 /* Managers */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		0FF4D2B12B0508CC009F5125 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				0FCD736F2ABA21AE006E539A /* AlertItem.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		0FF4D2B22B0508D9009F5125 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0F7D04292ADEB3590076E24E /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		0FF4D2B32B0508E7009F5125 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0FF4D2AC2B0500AD009F5125 /* String+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0FF4D2B42B050903009F5125 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0F588B382B02B65A005CD319 /* APButton.swift */,
+				0F588B3C2B02B7BA005CD319 /* APCaracteristic.swift */,
+				0F588B3A2B02B6E6005CD319 /* APDismissButton.swift */,
+				0F588B2B2B0271EF005CD319 /* LoadingView.swift */,
+				0F588B2F2B027D67005CD319 /* RemoteImage.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0FF4D2B52B050944009F5125 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
 				0FCD73742ABA30E2006E539A /* AppetizersTabView.swift */,
-				0F588B352B0297BF005CD319 /* Networking */,
-				0F588B2A2B02677C005CD319 /* Shared */,
 				0F588B312B02977D005CD319 /* List */,
 				0F588B322B029783005CD319 /* Account */,
 				0F588B332B02978B005CD319 /* Order */,
 			);
-			path = Appetizers;
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		0FFC5EE72AB5DBF700423E51 /* Timestamps */ = {
@@ -494,6 +535,7 @@
 				0FFC5EED2AB5DD1C00423E51 /* FrameworkGridView.swift in Sources */,
 				0FCD736B2ABA13F2006E539A /* ScannerVC.swift in Sources */,
 				0F4B160B2AB8D97600E137F7 /* SafariView.swift in Sources */,
+				0FF4D2AB2B04FF6E009F5125 /* AccountViewModel.swift in Sources */,
 				0F588B3D2B02B7BA005CD319 /* APCaracteristic.swift in Sources */,
 				0F7D04282ADDCF580076E24E /* AppetizerListCell.swift in Sources */,
 				0FFC5EF12AB6031900423E51 /* AFButton.swift in Sources */,
@@ -504,8 +546,10 @@
 				0F588B2C2B0271EF005CD319 /* LoadingView.swift in Sources */,
 				0FCD736D2ABA1707006E539A /* ScannerView.swift in Sources */,
 				0FCD73692AB9C8E3006E539A /* BarcodeScannerView.swift in Sources */,
+				0FF4D2AD2B0500AD009F5125 /* String+Ext.swift in Sources */,
 				0FCD73772ABA30FE006E539A /* AppetizersListView.swift in Sources */,
 				0FFC5EEF2AB6014D00423E51 /* FrameworkDetailView.swift in Sources */,
+				0FF4D2AF2B0508AA009F5125 /* User.swift in Sources */,
 				0F7D04262ADDC8D10076E24E /* Appetizer.swift in Sources */,
 				0FFC5EEB2AB5DC2A00423E51 /* Framework.swift in Sources */,
 				0F588B372B0299F9005CD319 /* AppetizerDetailView.swift in Sources */,

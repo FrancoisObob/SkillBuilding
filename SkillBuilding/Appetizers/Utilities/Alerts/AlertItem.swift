@@ -39,6 +39,18 @@ struct AlertItem: Identifiable {
         }
         self.button = .default(Text("OK"))
     }
+
+    init(formError: FormError) {
+        switch formError {
+        case .invalidForm:
+            self.title = "Invalid form"
+            self.message = "Please ensure all fields in the form have been filled out."
+        case .invalidEmail:
+            self.title = "Invalid email"
+            self.message = "Please ensure your email is correct."
+        }
+        self.button = .default(Text("OK"))
+    }
 }
 
 extension Alert {
