@@ -48,6 +48,12 @@ struct AlertItem: Identifiable {
         case .invalidEmail:
             self.title = "Invalid email"
             self.message = "Please ensure your email is correct."
+        case .userSaveSuccess:
+            self.title = "Profile Saved"
+            self.message = "Your profile information was successfully saved."
+        case .invalidUserData:
+            self.title = "Profile Error"
+            self.message = "There was an error savin or retrieving your profile."
         }
         self.button = .default(Text("OK"))
     }

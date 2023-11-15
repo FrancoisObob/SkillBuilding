@@ -5,40 +5,53 @@
 //  Created by Francois Lambert on 11/15/23.
 //
 
-import Foundation
+import SwiftUI
 
 final class AccountViewModel: ObservableObject {
-    @Published var firstName = ""
-    @Published var lastName = ""
-    @Published var email = ""
-    @Published var birthday = Date()
-    @Published var extraNapkins = false
-    @Published var frequentRefills = false
 
+    @AppStorage("user") private var userData: Data?
+    @Published var user = User()
     @Published var alertItem: AlertItem?
 
+    func saveChanges() {
+        guard isValidForm else { return }
+
+        do {
+            let data = try JSONEncoder().encode(user)
+            userData = data
+            alertItem = .init(formError: .userSaveSuccess)
+        } catch {
+            alertItem = .init(formError: .invalidUserData)
+        }
+    }
+
+    func retrieveUser() {
+        do {
+            guard let userData else { return }
+            self.user = try JSONDecoder().decode(User.self, from: userData)
+        } catch {
+            alertItem = .init(formError: .invalidUserData)
+        }
+    }
+
     var isValidForm: Bool {
-        guard !firstName.isEmpty  && !lastName.isEmpty && !email.isEmpty else {
+        guard !user.firstName.isEmpty  && !user.lastName.isEmpty && !user.email.isEmpty else {
             alertItem = .init(formError: .invalidForm)
             return false
         }
 
-        guard email.isValidEmail else {
+        guard user.email.isValidEmail else {
             alertItem = .init(formError: .invalidEmail)
             return false
         }
 
         return true
     }
-
-    func saveChanges() {
-        guard isValidForm else { return }
-
-        print("Changes have been saved successfully.")
-    }
 }
 
 enum FormError {
     case invalidForm
     case invalidEmail
+    case userSaveSuccess
+    case invalidUserData
 }
