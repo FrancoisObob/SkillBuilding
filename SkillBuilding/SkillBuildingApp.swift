@@ -10,6 +10,8 @@ import SwiftData
 
 @main 
 struct SkillBuildingApp: App {
+    var order = Order()
+
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -26,6 +28,7 @@ struct SkillBuildingApp: App {
     var body: some Scene {
         WindowGroup {
             AppetizersTabView()
+                .environmentObject(order)
         }
         .modelContainer(sharedModelContainer)
     }

@@ -41,6 +41,8 @@
 		0FF4D2AB2B04FF6E009F5125 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF4D2AA2B04FF6E009F5125 /* AccountViewModel.swift */; };
 		0FF4D2AD2B0500AD009F5125 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF4D2AC2B0500AD009F5125 /* String+Ext.swift */; };
 		0FF4D2AF2B0508AA009F5125 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF4D2AE2B0508AA009F5125 /* User.swift */; };
+		0FF4D2B72B051056009F5125 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF4D2B62B051056009F5125 /* EmptyState.swift */; };
+		0FF4D2B92B0512B9009F5125 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF4D2B82B0512B9009F5125 /* Order.swift */; };
 		0FFC5EEB2AB5DC2A00423E51 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC5EEA2AB5DC2A00423E51 /* Framework.swift */; };
 		0FFC5EED2AB5DD1C00423E51 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC5EEC2AB5DD1C00423E51 /* FrameworkGridView.swift */; };
 		0FFC5EEF2AB6014D00423E51 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC5EEE2AB6014D00423E51 /* FrameworkDetailView.swift */; };
@@ -105,6 +107,8 @@
 		0FF4D2AA2B04FF6E009F5125 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		0FF4D2AC2B0500AD009F5125 /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		0FF4D2AE2B0508AA009F5125 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0FF4D2B62B051056009F5125 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		0FF4D2B82B0512B9009F5125 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		0FFC5EEA2AB5DC2A00423E51 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 		0FFC5EEC2AB5DD1C00423E51 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
 		0FFC5EEE2AB6014D00423E51 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
@@ -284,6 +288,7 @@
 			children = (
 				0F7D04252ADDC8D10076E24E /* Appetizer.swift */,
 				0FF4D2AE2B0508AA009F5125 /* User.swift */,
+				0FF4D2B82B0512B9009F5125 /* Order.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -352,6 +357,7 @@
 				0F588B3A2B02B6E6005CD319 /* APDismissButton.swift */,
 				0F588B2B2B0271EF005CD319 /* LoadingView.swift */,
 				0F588B2F2B027D67005CD319 /* RemoteImage.swift */,
+				0FF4D2B62B051056009F5125 /* EmptyState.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -547,6 +553,7 @@
 				0FCD736D2ABA1707006E539A /* ScannerView.swift in Sources */,
 				0FCD73692AB9C8E3006E539A /* BarcodeScannerView.swift in Sources */,
 				0FF4D2AD2B0500AD009F5125 /* String+Ext.swift in Sources */,
+				0FF4D2B72B051056009F5125 /* EmptyState.swift in Sources */,
 				0FCD73772ABA30FE006E539A /* AppetizersListView.swift in Sources */,
 				0FFC5EEF2AB6014D00423E51 /* FrameworkDetailView.swift in Sources */,
 				0FF4D2AF2B0508AA009F5125 /* User.swift in Sources */,
@@ -554,6 +561,7 @@
 				0FFC5EEB2AB5DC2A00423E51 /* Framework.swift in Sources */,
 				0F588B372B0299F9005CD319 /* AppetizerDetailView.swift in Sources */,
 				0F588B302B027D67005CD319 /* RemoteImage.swift in Sources */,
+				0FF4D2B92B0512B9009F5125 /* Order.swift in Sources */,
 				0F1560642AB3413700404083 /* SkillBuildingApp.swift in Sources */,
 				0FCD737B2ABA3115006E539A /* OrderView.swift in Sources */,
 				0F4B16112AB8FD5F00E137F7 /* XDismissButton.swift in Sources */,
