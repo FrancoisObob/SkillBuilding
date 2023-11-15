@@ -34,8 +34,6 @@ struct AlertItem: Identifiable {
             self.message = "Invalid response from the server. Please try again later or contact support."
         case .invalidData:
             self.message = "The data received from the server was invalid. Please contact support."
-        case .unableToComplete:
-            self.message = "Unable to complete your request at this time. Please check your internet connection."
         }
         self.button = .default(Text("OK"))
     }

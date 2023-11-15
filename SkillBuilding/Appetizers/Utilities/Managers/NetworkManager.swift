@@ -16,38 +16,23 @@ final class NetworkManager {
 
     private init() {}
 
-    func getAppetizers(completed: @escaping (Result<[Appetizer], APError>) -> Void) {
+    func getAppetizers() async throws -> [Appetizer] {
         guard let url = URL(string: appetizerURL) else {
-            completed(.failure(.invalidURL))
-            return
+            throw APError.invalidURL
         }
 
-        let task = URLSession.shared.dataTask(with: url) { data, response, error in
-            guard error == nil else {
-                completed(.failure(.unableToComplete))
-                return
-            }
+        let (data, response) = try await URLSession.shared.data(from: url)
 
-            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
-                completed(.failure(.invalidResponse))
-                return
-            }
-
-            guard let data = data else {
-                completed(.failure(.invalidData))
-                return
-            }
-
-            do {
-                let decoder = JSONDecoder()
-                let decodedResponse = try decoder.decode(AppetizersResponse.self, from: data)
-                completed(.success(decodedResponse.request))
-            } catch {
-                completed(.failure(.invalidData))
-            }
+        guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+            throw APError.invalidResponse
         }
 
-        task.resume()
+        do {
+            let decodedResponse = try JSONDecoder().decode(AppetizersResponse.self, from: data)
+            return decodedResponse.request
+        } catch  {
+            throw APError.invalidData
+        }
     }
 
     private let cache = NSCache<NSString, UIImage>()
@@ -84,6 +69,5 @@ enum APError: Error {
     case invalidURL
     case invalidResponse
     case invalidData
-    case unableToComplete
 }
 

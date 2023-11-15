@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class AppetizersListViewModel: ObservableObject {
+@MainActor final class AppetizersListViewModel: ObservableObject {
     
     @Published var appetizers: [Appetizer] = []
     @Published var alertItem: AlertItem?
@@ -15,20 +15,16 @@ final class AppetizersListViewModel: ObservableObject {
     @Published var isShowingDetail = false
     @Published var selectedAppetizer: Appetizer?
 
-    func getAppetizers() {
+    func getAppetizers() async {
         isLoading = true
 
-        NetworkManager.shared.getAppetizers { result in
-            DispatchQueue.main.async {
-                switch result {
-                case .success(let appetizers):
-                    self.appetizers = appetizers
-                case .failure(let error):
-                    self.alertItem = .init(apError: error)
-                }
-                
-                self.isLoading = false
-            }
+        do {
+            appetizers = try await NetworkManager.shared.getAppetizers()
+
+        } catch {
+            if let error = error as? APError { alertItem = .init(apError: error) }
         }
+
+        isLoading = false
     }
 }
