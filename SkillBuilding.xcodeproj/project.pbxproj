@@ -25,6 +25,7 @@
 		0F588B392B02B65A005CD319 /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F588B382B02B65A005CD319 /* APButton.swift */; };
 		0F588B3B2B02B6E6005CD319 /* APDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F588B3A2B02B6E6005CD319 /* APDismissButton.swift */; };
 		0F588B3D2B02B7BA005CD319 /* APCaracteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F588B3C2B02B7BA005CD319 /* APCaracteristic.swift */; };
+		0F774A642B07AA7F0068C0E0 /* FrameworkDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F774A632B07AA7F0068C0E0 /* FrameworkDetailViewModel.swift */; };
 		0F7D04262ADDC8D10076E24E /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D04252ADDC8D10076E24E /* Appetizer.swift */; };
 		0F7D04282ADDCF580076E24E /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D04272ADDCF580076E24E /* AppetizerListCell.swift */; };
 		0F7D042A2ADEB3590076E24E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7D04292ADEB3590076E24E /* NetworkManager.swift */; };
@@ -92,6 +93,7 @@
 		0F588B382B02B65A005CD319 /* APButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
 		0F588B3A2B02B6E6005CD319 /* APDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APDismissButton.swift; sourceTree = "<group>"; };
 		0F588B3C2B02B7BA005CD319 /* APCaracteristic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APCaracteristic.swift; sourceTree = "<group>"; };
+		0F774A632B07AA7F0068C0E0 /* FrameworkDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewModel.swift; sourceTree = "<group>"; };
 		0F7D04252ADDC8D10076E24E /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
 		0F7D04272ADDCF580076E24E /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
 		0F7D04292ADEB3590076E24E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				0FFC5EEE2AB6014D00423E51 /* FrameworkDetailView.swift */,
+				0F774A632B07AA7F0068C0E0 /* FrameworkDetailViewModel.swift */,
 			);
 			path = FrameworkDetail;
 			sourceTree = "<group>";
@@ -542,6 +545,7 @@
 				0F81ACBA2AB3A74400C9C06F /* WeatherContentView.swift in Sources */,
 				0F4B160F2AB8FD2C00E137F7 /* FrameworkTitleView.swift in Sources */,
 				0FFC5EED2AB5DD1C00423E51 /* FrameworkGridView.swift in Sources */,
+				0F774A642B07AA7F0068C0E0 /* FrameworkDetailViewModel.swift in Sources */,
 				0FCD736B2ABA13F2006E539A /* ScannerVC.swift in Sources */,
 				0F4B160B2AB8D97600E137F7 /* SafariView.swift in Sources */,
 				0FF4D2AB2B04FF6E009F5125 /* AccountViewModel.swift in Sources */,

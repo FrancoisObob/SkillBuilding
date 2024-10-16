@@ -8,39 +8,47 @@
 import SwiftUI
 
 struct FrameworkDetailView: View {
-    var framework: Framework
-    @State private var isShowingSafariView = false
+    @ObservedObject var viewModel: FrameworkDetailViewModel
 
     var body: some View {
         VStack {
 
-            FrameworkTitleView(framework: framework)
-            Text(framework.description)
+            FrameworkTitleView(framework: viewModel.framework)
+            Text(viewModel.framework.description)
                 .font(.body)
                 .padding()
 
             Spacer()
 
-            Button {
-                isShowingSafariView = true
-            } label: {
-//                AFButton(title: "Learn More")
-                Label("Learn More", systemImage: "book.fill")
+            if let url = URL(string: viewModel.framework.urlString) {
+                Link("Learn More", destination: url)
+                    .buttonStyle(.borderedProminent)
+                    .controlSize(.large)
+                    .buttonBorderShape(.capsule)
+                    .tint(.red)
+                    .fontWeight(.semibold)
             }
-            .buttonStyle(.borderedProminent)
-            .controlSize(.large)
-            .buttonBorderShape(.capsule)
-            .tint(.red)
-            .fontWeight(.semibold)
+
+//            Button {
+//                viewModel.isShowingSafariView = true
+//            } label: {
+////                AFButton(title: "Learn More")
+//                Label("Learn More", systemImage: "book.fill")
+//            }
+//            .buttonStyle(.borderedProminent)
+//            .controlSize(.large)
+//            .buttonBorderShape(.capsule)
+//            .tint(.red)
+//            .fontWeight(.semibold)
         }
-        .sheet(isPresented: $isShowingSafariView) {
-            if let url = URL(string: framework.urlString) {
-                SafariView(url: url)
-            }
-        }
+//        .sheet(isPresented: $viewModel.isShowingSafariView) {
+//            if let url = URL(string: viewModel.framework.urlString) {
+//                SafariView(url: url)
+//            }
+//        }
     }
 }
 
 #Preview {
-    FrameworkDetailView(framework: MockData.sampleFramework)
+    FrameworkDetailView(viewModel: .init(framework: MockData.sampleFramework))
 }

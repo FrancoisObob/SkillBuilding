@@ -29,6 +29,8 @@ struct SkillBuildingApp: App {
         WindowGroup {
             AppetizersTabView()
                 .environmentObject(order)
+//            FrameworkGridView()
+//            BarcodeScannerView()
         }
         .modelContainer(sharedModelContainer)
     }
